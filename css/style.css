@@ -509,10 +509,7 @@ h5 {
   align-items: flex-start;
   margin-bottom: 5em;
   z-index: 1;
-  pointer-events: none !important;
   color: #171616 !important;
-  cursor: default !important;
-  text-decoration: none !important;
 }
 
 .link-1-2 {
@@ -537,6 +534,12 @@ h5 {
   padding-bottom: 5px;
   line-height: 23px;
 
+}
+
+
+.link-1-2,
+.link-2-2:visited {
+  color: #171616;
 }
 
 .link-buttons-2 button:hover {
