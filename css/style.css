@@ -469,6 +469,7 @@ h5 {
   bottom: 49.35%;
   margin-left: 220px;
   z-index: 1;
+  color: #171616;
 }
 
 .link-1 {
@@ -508,6 +509,7 @@ h5 {
   align-items: flex-start;
   margin-bottom: 5em;
   z-index: 1;
+  color: #171616;
 }
 
 .link-1-2 {
@@ -600,12 +602,11 @@ h5 {
   font-size: 18px;
   line-height: 130%;
   max-width: 480px;
-  /* margin-left: 150px; */
-  /* margin-top: 1em; */
+
 
 }
 
-.rest-subtext {}
+
 
 
 
