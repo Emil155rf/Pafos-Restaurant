@@ -509,7 +509,10 @@ h5 {
   align-items: flex-start;
   margin-bottom: 5em;
   z-index: 1;
-  color: #171616;
+  pointer-events: none !important;
+  color: #171616 !important;
+  cursor: default !important;
+  text-decoration: none !important;
 }
 
 .link-1-2 {
@@ -857,7 +860,7 @@ h5 {
     align-self: center;
 
   }
-  
+
 
   .rest-text {
     display: flex;
@@ -865,9 +868,11 @@ h5 {
     justify-content: center;
     align-items: center;
   }
+
   .rest-moscow img {
     padding-bottom: 1em;
   }
+
   .articles-inner {
     display: flex;
     justify-content: center;
@@ -1129,6 +1134,3 @@ h5 {
     left: .1em;
   }
 }
-
-
-
