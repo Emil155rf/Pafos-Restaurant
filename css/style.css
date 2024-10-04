@@ -462,12 +462,11 @@ h5 {
 .link-btn {
   margin-top: 1em;
   margin-left: .5em;
-  text-decoration: none;
-  color: #171616;
 }
 
 .link-btn:visited {
   color: #171616;
+  text-decoration: none;
 }
 
 
@@ -554,6 +553,7 @@ h5 {
 .link-1-2,
 .link-2-2:visited {
   color: #171616;
+  text-decoration: none;
 }
 
 .link-buttons-2 button:hover {
