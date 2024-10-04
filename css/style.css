@@ -342,6 +342,7 @@ h5 {
 .bi-x-square,
 .burger-btn:visited {
   color: #171616;
+  text-decoration: none;
 }
 
 .alba-btn {
@@ -461,6 +462,8 @@ h5 {
 .link-btn {
   margin-top: 1em;
   margin-left: .5em;
+  text-decoration: none;
+  color: #171616;
 }
 
 .link-btn:visited {
