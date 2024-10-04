@@ -305,6 +305,8 @@ h5 {
   align-items: center;
 }
 
+
+
 .burger h1 {
   color: #24282E;
 }
@@ -335,6 +337,10 @@ h5 {
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
+}
+
+.burger-btn:visited {
+  color: #171616;
 }
 
 .alba-btn {
@@ -450,11 +456,15 @@ h5 {
   text-align: left;
 }
 
+
 .link-btn {
   margin-top: 1em;
   margin-left: .5em;
 }
 
+.link-btn:visited {
+  color: #171616;
+}
 
 
 /* link  */
