@@ -341,8 +341,8 @@ h5 {
 
 .bi-x-square,
 .burger-btn:visited {
-  color: inherit;
-  text-decoration: none;
+  color: #171616 !important;
+  text-decoration: none !important;
 }
 
 .alba-btn {
@@ -465,8 +465,8 @@ h5 {
 }
 
 .link-btn:visited {
-  color: inherit;
-  text-decoration: none;
+  color: #171616 !important;
+  text-decoration: none !important;
 }
 
 
