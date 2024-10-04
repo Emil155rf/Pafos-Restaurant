@@ -339,11 +339,7 @@ h5 {
   font-size: 24px;
 }
 
-.bi-x-square,
-.burger-btn:visited {
-  color: #171616 !important;
-  text-decoration: none !important;
-}
+
 
 .alba-btn {
   margin-top: 1em;
@@ -464,10 +460,7 @@ h5 {
   margin-left: .5em;
 }
 
-.link-btn:visited {
-  color: #171616 !important;
-  text-decoration: none !important;
-}
+
 
 
 /* link  */
@@ -551,6 +544,9 @@ h5 {
 
 
 .link-1-2,
+.bi-x-square,
+.burger-btn,
+.link-btn,
 .link-2-2:visited {
   color: #171616;
   text-decoration: none;
