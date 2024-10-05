@@ -1,19 +1,19 @@
-const swiperContainer = document.querySelector('.swiper-container')
-const swiperWrapper = document.querySelector('.swiper-wrapper')
-const swiperSlides = document.querySelectorAll('.swiper-slide')
-const prevButton = document.querySelector('.swiper-button-prev')
-const nextButton = document.querySelector('.swiper-button-next')
-const counter = document.querySelector('.swiper-counter')
-const link_2 = document.querySelector('.link-2')
-const light = document.querySelector('.header-light')
-const dark = document.querySelector('.header-dark')
-const moon = document.querySelector('.bi-moon')
-const openBurger = document.querySelector('.bi-list')
-const closeBurger = document.querySelector('.bi-x-square')
-const burger = document.querySelector('.burger')
-const lang = document.querySelector('.header-lang')
-const close = document.querySelector('.bi-x-square')
-const arrowRight = document.querySelector('.bi-arrow-right')
+let swiperContainer = document.querySelector('.swiper-container')
+let swiperWrapper = document.querySelector('.swiper-wrapper')
+let swiperSlides = document.querySelectorAll('.swiper-slide')
+let prevButton = document.querySelector('.swiper-button-prev')
+let nextButton = document.querySelector('.swiper-button-next')
+let counter = document.querySelector('.swiper-counter')
+let link_2 = document.querySelector('.link-2')
+let light = document.querySelector('.header-light')
+let dark = document.querySelector('.header-dark')
+let moon = document.querySelector('.bi-moon')
+let openBurger = document.querySelector('.bi-list')
+let closeBurger = document.querySelector('.bi-x-square')
+let burger = document.querySelector('.burger')
+let lang = document.querySelector('.header-lang')
+let close = document.querySelector('.bi-x-square')
+let arrowRight = document.querySelector('.bi-arrow-right')
 
 
 
@@ -90,7 +90,7 @@ window.onscroll = function scrollMain() {
 
 
 document.querySelector('.header-dark').addEventListener('click', () => {
-  const currentTheme = document.body.className
+  let currentTheme = document.body.className
   if (currentTheme === 'light-theme' || currentTheme === '') {
     document.body.className = 'dark-theme'
     moon.className = 'bi-brightness-high'
@@ -168,7 +168,7 @@ const russianWords = {
   '33': 'Вакансии',
   '34': 'Контакты',
 
-} 
+}
 
 
 
@@ -231,9 +231,9 @@ function translateWebsite() {
 
 
   elementsToTranslate.forEach(element => {
-    let wordToTranslate = element.dataset.translate; // Получаем слово из атрибута
+    let wordToTranslate = element.dataset.translate;
     let translatedWord = (currentLanguage === "russian" || currentLanguage === '') ? russianWords[wordToTranslate] : englishWords[wordToTranslate];
-    element.textContent = translatedWord; // Заменяем текст на переведенный
+    element.textContent = translatedWord;
   });
 
 
