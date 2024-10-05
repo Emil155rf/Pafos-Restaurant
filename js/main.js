@@ -13,7 +13,6 @@ const closeBurger = document.querySelector('.bi-x-square')
 const burger = document.querySelector('.burger')
 const lang = document.querySelector('.header-lang')
 const close = document.querySelector('.bi-x-square')
-const arrowRight = document.querySelector('.bi-arrow-right')
 
 
 
@@ -129,7 +128,6 @@ function showBurger() {
 
 showBurger()
 
-let arrow = document.querySelector('.bi-arrow-right')
 
 
 const russianWords = {
