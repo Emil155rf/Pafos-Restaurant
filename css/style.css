@@ -67,23 +67,14 @@ h2,
 h3,
 h4,
 h5,
+p,
 h6 {
   margin: 0;
 }
 
-p {
-  margin: 0 0 10px;
-}
 
-h5 {
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 38px;
-}
 
-.open {
-  display: flex !important;
-}
+
 
 
 /* container
@@ -757,8 +748,9 @@ h5 {
   justify-content: left;
   align-items: flex-start;
   margin-top: 5em;
+  margin-bottom: 0.5em;
   margin-left: 7em;
-  margin-bottom: .5em;
+
 
 }
 
@@ -782,6 +774,7 @@ h5 {
   font-size: 42px;
   line-height: 100%;
   width: 500px;
+  
 }
 
 .time-work {
@@ -836,6 +829,7 @@ h5 {
 
 .footer-link {
   text-decoration: underline;
+  margin-top: 7px;
 }
 
 
