@@ -13,6 +13,12 @@ const closeBurger = document.querySelector('.bi-x-square')
 const burger = document.querySelector('.burger')
 const lang = document.querySelector('.header-lang')
 const close = document.querySelector('.bi-x-square')
+const arrowRight = document.querySelector('.bi-arrow-right')
+
+
+
+
+
 
 let currentSlideIndex = 0
 const slideWidth = swiperSlides[0].offsetWidth
@@ -85,7 +91,7 @@ window.onscroll = function scrollMain() {
 
 document.querySelector('.header-dark').addEventListener('click', () => {
   const currentTheme = document.body.className
-  if (currentTheme === 'light-theme') {
+  if (currentTheme === 'light-theme' || currentTheme === '') {
     document.body.className = 'dark-theme'
     moon.className = 'bi-brightness-high'
 
@@ -117,12 +123,123 @@ function showBurger() {
   })
 
 
+
 }
 
 
 showBurger()
 
+let arrow = document.querySelector('.bi-arrow-right')
+
+
+const russianWords = {
+  '1': 'Перейти на сайт ресторана',
+  '2': 'Перейти на сайт ресторана',
+  '3': 'Москва',
+  '4': 'Ресторан Pafos',
+  '5': 'ПАФОС - это новый формат любимых греческих курортов с их атмосферой и аутентичными блюдами',
+  '6': 'Здесь на двух этажах расположились сразу два проекта: брассери и большой греческий ресторан, в которых лаконично маневрирует неспешность островной жизни Средиземноморья и празднество, без которого невозможно представить курорты Греции.',
+  '7': 'Адрес ресторана:',
+  '8': 'Москва, Тверской бульвар, 27, стр.1',
+  '9': 'Время работы:',
+  '10': 'Воскресенье - Четверг С 9:00 ДО 00:00',
+  '11': 'Пятница - Суббота С 9:00 ДО 02:00',
+  '12': 'Все права защищены',
+  '13': 'Политика конфиденциальности',
+  '14': 'О Alba group',
+  '15': 'Москва',
+  '16': 'Пафос',
+  '17': 'ЮГ 22',
+  '18': 'Lou Lou',
+  '19': 'Жар-Птица',
+  '20': 'Хорошая девочка',
+  '21': 'Eshak',
+  '22': 'Санкт-Петербург',
+  '23': 'Lou Lou',
+  '24': 'Lou Lou Secret Bar',
+  '25': 'Казань',
+  '26': 'More&more',
+  '27': 'Eshak',
+  '28': 'Хорошая девочка',
+  '29': 'Кейтеринг',
+  '30': 'Программа лояльности',
+  '31': 'Новости',
+  '32': 'Доставка',
+  '33': 'Вакансии',
+  '34': 'Контакты',
+
+} 
 
 
 
+
+
+const englishWords = {
+  '1': 'Restaurants website',
+  '2': 'Restaurants website',
+  '3': 'Moscow',
+  '4': 'Restaurant Pafos',
+  '5': 'PAFOS - is a new format of favorite Greek resorts with their atmosphere and authentic dishes',
+  '6': 'Here, on two floors, there are two projects at once: a brasserie and a large Greek restaurant, in which the leisurely pace of Mediterranean island life and the festivity, without which it is impossible to imagine the resorts of Greece, are succinctly maneuvered.',
+  '7': 'Restaurant address:',
+  '8': 'Moscow, Tverskaya Boulevard, 27, p. 1',
+  '9': 'Working hours:',
+  '10': 'Sunday - Thursday From 9:00 TO 00:00',
+  '11': ' Friday - Saturday From 9:00 TO 02:00',
+  '12': 'All rights reserved',
+  '13': 'Privacy policy',
+  '14': 'About Alba group',
+  '15': 'Moscow',
+  '16': 'Pafos',
+  '17': 'South 22',
+  '18': 'Lou Lou',
+  '19': 'Jar-Ptica',
+  '20': 'Horoshaya Devochka',
+  '21': 'Eshak',
+  '22': 'St. Petersburg',
+  '23': 'Lou Lou',
+  '24': 'Lou Lou Secret Bar',
+  '25': 'Kazan',
+  '26': 'More&more',
+  '27': 'Eshak',
+  '28': 'Horoshaya Devochka',
+  '29': 'Catering',
+  '30': 'Loyalty program',
+  '31': 'News',
+  '32': 'Delivery',
+  '33': 'Job',
+  '34': 'Contacts',
+
+
+}
+
+
+let currentLanguage = 'russian'
+
+
+function translateWebsite() {
+
+  if (currentLanguage === "russian") {
+    currentLanguage = "english";
+  } else {
+    currentLanguage = "russian";
+  }
+
+
+
+  const elementsToTranslate = document.querySelectorAll("[data-translate]");
+
+
+  elementsToTranslate.forEach(element => {
+    let wordToTranslate = element.dataset.translate; // Получаем слово из атрибута
+    let translatedWord = (currentLanguage === "russian" || currentLanguage === '') ? russianWords[wordToTranslate] : englishWords[wordToTranslate];
+    element.textContent = translatedWord; // Заменяем текст на переведенный
+  });
+
+
+  document.querySelector(".english").textContent = (currentLanguage === "russian") ? "Eng" : "Рус";
+
+}
+
+document.querySelector('.english').addEventListener("click", translateWebsite);
 
