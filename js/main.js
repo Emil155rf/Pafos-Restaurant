@@ -218,26 +218,26 @@ let currentLanguage = 'russian'
 function translateWebsite() {
 
   if (currentLanguage === "russian") {
-    currentLanguage = "english";
+    currentLanguage = "english"
   } else {
-    currentLanguage = "russian";
+    currentLanguage = "russian"
   }
 
 
 
-  const elementsToTranslate = document.querySelectorAll("[data-translate]");
+  const elementsToTranslate = document.querySelectorAll("[data-translate]")
 
 
   elementsToTranslate.forEach(element => {
-    let wordToTranslate = element.dataset.translate;
-    let translatedWord = (currentLanguage === "russian" || currentLanguage === '') ? russianWords[wordToTranslate] : englishWords[wordToTranslate];
-    element.textContent = translatedWord;
-  });
+    let wordToTranslate = element.dataset.translate
+    let translatedWord = (currentLanguage === "russian" || currentLanguage === '') ? russianWords[wordToTranslate] : englishWords[wordToTranslate]
+    element.textContent = translatedWord
+  })
 
 
-  document.querySelector(".english").textContent = (currentLanguage === "russian") ? "Eng" : "Рус";
+  document.querySelector(".english").textContent = (currentLanguage === "russian") ? "Eng" : "Рус"
 
 }
 
-document.querySelector('.english').addEventListener("click", translateWebsite);
+document.querySelector('.english').addEventListener("click", translateWebsite)
 
