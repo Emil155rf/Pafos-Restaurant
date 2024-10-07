@@ -85,6 +85,7 @@ h6 {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
 
@@ -627,8 +628,6 @@ h6 {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  position: relative;
-  bottom: 3em;
 
 }
 
