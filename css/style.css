@@ -85,7 +85,6 @@ h6 {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
 
@@ -628,6 +627,8 @@ h6 {
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  position: relative;
+  bottom: 3em;
 
 }
 
@@ -765,6 +766,7 @@ h6 {
 .address-title {
   font-size: 24px;
   line-height: 100%;
+  padding-bottom: 0.3em;
 
 }
 
@@ -792,6 +794,7 @@ h6 {
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
+  padding-bottom: .5em;
 }
 
 .work-subtitle {
