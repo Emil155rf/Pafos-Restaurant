@@ -290,14 +290,7 @@ h6 {
 
 }
 
-.bi-x-square {
 
-  font-size: 38px;
-  position: relative;
-  margin-left: 10px;
-  bottom: 3px;
-
-}
 
 
 .bi-arrow-right {
@@ -307,23 +300,14 @@ h6 {
 }
 
 
-
-/* burger  */
-/* ======================== */
-
-
-
-
-
-.header-menu-2 {
-  display: block;
-  visibility: hidden;
-  position: relative;
-  right: 48px;
-  background-color: transparent;
+.bi-x-square {
+  font-size: 30px;
+  margin-left: .3em;
 }
 
 
+/* burger  */
+/* ======================== */
 
 
 .burger {
@@ -586,7 +570,6 @@ h6 {
 
 
 .link-1-2,
-.bi-x-square,
 .burger-btn,
 .alba-btn,
 .link-2-2:visited {
@@ -620,6 +603,8 @@ h6 {
 
 
 .rest-inner {
+  position: absolute;
+  bottom: -8em;
   display: flex;
   flex-direction: row;
   justify-content: left;

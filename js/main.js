@@ -9,7 +9,7 @@ const light = document.querySelector('.header-light')
 const dark = document.querySelector('.header-dark')
 const moon = document.querySelector('.bi-moon')
 const openBurger = document.querySelector('.bi-list')
-const closeBurger = document.querySelector('.bi-x-square')
+// const closeBurger = document.querySelector('.bi-x-square')
 const burger = document.querySelector('.burger')
 const lang = document.querySelector('.header-lang')
 const close = document.querySelector('.bi-x-square')
@@ -104,30 +104,17 @@ document.querySelector('.header-dark').addEventListener('click', () => {
 
 
 
-
-function showBurger() {
-  openBurger.addEventListener('click', () => {
+openBurger.addEventListener('click', () => {
+  if (openBurger.className === 'bi-list') {
     burger.style.visibility = 'visible'
-    openBurger.style.visibility = 'hidden'
-    closeBurger.style.visibility = 'visible'
-
-
-
-  })
-  closeBurger.addEventListener('click', () => {
+    openBurger.className = 'bi-x-square'
+  } else {
     burger.style.visibility = 'hidden'
-    closeBurger.style.visibility = 'hidden'
-    openBurger.style.visibility = 'visible'
-
-  })
+    openBurger.className = 'bi-list'
+  }
 
 
-
-}
-
-
-showBurger()
-
+})
 
 
 const russianWords = {
