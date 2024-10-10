@@ -852,7 +852,17 @@ h6 {
 
 
 
-
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+  .link-buttons {
+    position: relative;
+    bottom: 6.6em;
+  }
+  .rest-inner {
+    position: relative;
+    top: 0;
+  }
+  
+}
 
 
 
