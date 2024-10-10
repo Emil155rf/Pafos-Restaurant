@@ -380,8 +380,7 @@ h6 {
 
 
 .alba-btn {
-  margin-top: 1em;
-  margin-left: .5em;
+  margin: 1em 0 0 .5em;
 }
 
 .burger-nav {
@@ -397,8 +396,7 @@ h6 {
 .burger-moscow {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-  margin-top: 1.2em;
+  margin: 1.2em 0 0 1em;
 
 }
 
@@ -421,8 +419,7 @@ h6 {
 .burger-spb {
   display: flex;
   flex-direction: column;
-  margin-left: 4em;
-  margin-top: 1.2em;
+  margin: 1.2em 0 0 4em;
 }
 
 .burger-spb h1 {
@@ -445,9 +442,7 @@ h6 {
 .burger-kazan {
   display: flex;
   flex-direction: column;
-  margin-left: 3em;
-  margin-right: 1em;
-  margin-top: 1.2em;
+  margin: 1.2em 1em 0 3em;
 }
 
 .burger-kazan h1 {
@@ -490,8 +485,7 @@ h6 {
 
 
 .link-btn {
-  margin-top: 1em;
-  margin-left: .5em;
+  margin: 1em 0 0 .5em;
   text-align: left;
 
 }
@@ -729,9 +723,8 @@ h6 {
   flex-direction: row;
   justify-content: left;
   align-items: flex-start;
-  margin-top: 5em;
+  margin: 5em 0 0 7em;
   padding-bottom: 2em;
-  margin-left: 7em;
 
 
 }
@@ -1072,8 +1065,7 @@ h6 {
 
   .burger-alba {
     height: 50px;
-    padding-bottom: 75px;
-    padding-right: 20px;
+    padding: 0 20px 75px 0;
     text-align: center;
   }
 
