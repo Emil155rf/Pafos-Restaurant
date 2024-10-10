@@ -9,10 +9,8 @@ const light = document.querySelector('.header-light')
 const dark = document.querySelector('.header-dark')
 const moon = document.querySelector('.bi-moon')
 const openBurger = document.querySelector('.bi-list')
-// const closeBurger = document.querySelector('.bi-x-square')
 const burger = document.querySelector('.burger')
 const lang = document.querySelector('.header-lang')
-const close = document.querySelector('.bi-x-square')
 
 
 
