@@ -597,12 +597,6 @@ h6 {
 
 
 
-.Pfs {
-  position: absolute;
-  bottom: 64em;
-  z-index: 20;
-  left: 40%;
-}
 
 /* rest  */
 /* ======================== */
@@ -823,32 +817,47 @@ h6 {
 
 
 
-@media screen and (max-height: 900px) {
+
+
+@media screen and (min-width: 1600px) {
+  .rest-inner {
+    display: flex;
+    position: relative;
+    bottom: .1em;
+    flex-direction: row;
+
+  }
   .link-buttons {
     position: relative;
-    top: -14.5%;
+    bottom: 2.5em;
   }
+
+  
+}
+
+
+
+
+
+
+@media screen and (max-height: 900px) {
 
   .burger-inner {
     position: relative;
     top: 3em;
   }
 
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1600px) {
-  .Pfs {
-    display: none;
-  }
 
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1100px) {
   .articles-img {
@@ -1012,6 +1021,7 @@ h6 {
   .header-link-2 {
     display: none;
   }
+  
 
 }
 
@@ -1024,6 +1034,9 @@ h6 {
   .swiper-wrapper {
     height: 400px;
   }
+  .rest-inner {
+    margin-top: 1em;
+  }
 
   .header-link-2 {
     padding-left: 2em;
@@ -1033,6 +1046,9 @@ h6 {
   .swiper-button-prev {
     margin-top: 1em;
 
+  }
+  .link-buttons-2 {
+    position: relative;
   }
 
 }
