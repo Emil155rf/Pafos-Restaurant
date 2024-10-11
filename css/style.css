@@ -157,6 +157,7 @@ h6 {
 }
 
 .header-lang-btn:hover {
+  text-decoration-skip-ink: none;
   text-decoration: underline;
 }
 
@@ -280,7 +281,7 @@ h6 {
   font-size: 22px;
   color: white;
   position: relative;
-  bottom: 1px;
+  bottom: 3px;
 
 }
 
@@ -347,9 +348,16 @@ h6 {
 
 .burger h1 {
   color: #24282E;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  flex-wrap: nowrap;
+  width: 150px;
 }
 
-
+.burger-close {
+  background-color: transparent;
+}
 
 
 
@@ -393,82 +401,20 @@ h6 {
   height: 500px;
 }
 
-.burger-moscow {
-  display: flex;
-  flex-direction: column;
-  margin: 1.2em 0 0 1em;
-
-}
-
-.burger-moscow h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-}
-
-.burger-moscow a {
+.burger-nav a {
   text-decoration: none;
   font-size: 18px;
   color: #333;
   margin-top: .5em;
   width: 135px;
-
-
 }
 
-.burger-spb {
+
+.city {
   display: flex;
   flex-direction: column;
-  margin: 1.2em 0 0 4em;
+  margin: 1.2em 0 0 1em;
 }
-
-.burger-spb h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-  flex-wrap: nowrap;
-  width: 150px;
-}
-
-.burger-spb a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #333;
-  margin-top: .5em;
-
-
-}
-
-.burger-kazan {
-  display: flex;
-  flex-direction: column;
-  margin: 1.2em 1em 0 3em;
-}
-
-.burger-kazan h1 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-
-}
-
-.burger-kazan a {
-  text-decoration: none;
-  font-size: 18px;
-  color: #333;
-  margin-top: .5em;
-
-}
-
-
-
-
-
-
-
-
-
-
 
 
 .burger-link {
@@ -504,6 +450,7 @@ h6 {
   margin-left: 220px;
   z-index: 1;
   color: #171616;
+  border: none;
 }
 
 .link-1 {
@@ -801,17 +748,6 @@ h6 {
   margin-top: 7px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 1600px) {
   .rest-inner {
     display: flex;
@@ -820,18 +756,14 @@ h6 {
     flex-direction: row;
 
   }
+
   .link-buttons {
     position: relative;
     bottom: 2.5em;
   }
 
-  
+
 }
-
-
-
-
-
 
 @media screen and (max-height: 900px) {
 
@@ -842,13 +774,6 @@ h6 {
 
 
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 1100px) {
   .articles-img {
@@ -873,6 +798,7 @@ h6 {
     position: relative;
     bottom: 6.6em;
   }
+
   .rest-inner {
     position: relative;
     top: 0;
@@ -1018,7 +944,7 @@ h6 {
   .header-link-2 {
     display: none;
   }
-  
+
 
 }
 
@@ -1031,6 +957,7 @@ h6 {
   .swiper-wrapper {
     height: 400px;
   }
+
   .rest-inner {
     margin-top: 1em;
   }
@@ -1044,6 +971,7 @@ h6 {
     margin-top: 1em;
 
   }
+
   .link-buttons-2 {
     position: relative;
   }
