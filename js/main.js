@@ -1,16 +1,10 @@
-const swiperContainer = document.querySelector('.swiper-container')
 const swiperWrapper = document.querySelector('.swiper-wrapper')
 const swiperSlides = document.querySelectorAll('.swiper-slide')
 const prevButton = document.querySelector('.swiper-button-prev')
 const nextButton = document.querySelector('.swiper-button-next')
-const counter = document.querySelector('.swiper-counter')
-const link_2 = document.querySelector('.link-2')
-const light = document.querySelector('.header-light')
-const dark = document.querySelector('.header-dark')
 const moon = document.querySelector('.bi-moon')
 const openBurger = document.querySelector('.bi-list')
 const burger = document.querySelector('.burger')
-const lang = document.querySelector('.header-lang')
 
 
 
@@ -69,6 +63,7 @@ SmoothScroll({
 
   touchpadSupport: true,
 })
+
 
 
 
