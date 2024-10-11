@@ -4,7 +4,7 @@ const prevButton = document.querySelector('.swiper-button-prev')
 const nextButton = document.querySelector('.swiper-button-next')
 const moon = document.querySelector('.bi-moon')
 const openBurger = document.querySelector('.bi-list')
-const closeBurger = document.querySelector('.bi-x-square');
+const closeBurger = document.querySelector('.bi-x-square')
 const burger = document.querySelector('.burger')
 
 
@@ -98,16 +98,16 @@ document.querySelector('.header-dark').addEventListener('click', () => {
 
 
 openBurger.addEventListener('click', () => {
-  burger.style.visibility = 'visible';
-  openBurger.style.display = 'none';
-  closeBurger.style.display = 'block';
-});
+  burger.style.visibility = 'visible'
+  openBurger.style.display = 'none'
+  closeBurger.style.display = 'block'
+})
 
 closeBurger.addEventListener('click', () => {
-  burger.style.visibility = 'hidden';
-  closeBurger.style.display = 'none';
-  openBurger.style.display = 'block';
-});
+  burger.style.visibility = 'hidden'
+  closeBurger.style.display = 'none'
+  openBurger.style.display = 'block'
+})
 
 
 
