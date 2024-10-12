@@ -171,7 +171,7 @@ const englishWords = {
   '11': ' Friday - Saturday From 9:00 TO 02:00',
   '12': 'All rights reserved',
   '13': 'Privacy policy',
-  '14': 'About Alba group',
+  '14': 'Alba group',
   '15': 'Moscow',
   '16': 'Pafos',
   '17': 'South 22',
